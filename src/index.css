@@ -1,0 +1,73 @@
+/* Global Theme */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+  min-height: 100vh;
+}
+
+/* Container */
+
+.container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Dashboard Title */
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Premium Card */
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 25px;
+  margin: 20px auto;
+  width: 340px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.35s ease;
+}
+
+/* Hover Animation */
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(99, 102, 241, 0.35);
+}
+
+/* Typography */
+
+.card h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 8px 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
